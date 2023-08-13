@@ -1,6 +1,8 @@
 # The Idea:
 This repo is just an experiment to see if I can get a LLM to train another LLM much like how the [Alpaca model](https://crfm.stanford.edu/2023/03/13/alpaca.html) was trained at Stanford. However, I want to do it without fancy GPUs.
 
+I want to set up a Searx instance, as well to make queries to the model to train it on real-world data.
+
 # To get started:
 After cloning the repo, set up a virtual environment with pipenv and python 3.11
 
@@ -19,7 +21,7 @@ pipenv install
 ```
 
 
-You must store the path to your model in `models` directory, unless you want don't use the default
+You must store the path to your local model in the `/models` directory, unless you want don't use the default
 
 A GPU is not necessary to use this thanks to the great folks over at [llama.cpp](https://github.com/ggerganov/llama.cpp). You will need to install llama-cpp-python, however.
 
