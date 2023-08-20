@@ -5,15 +5,13 @@ name = "pypi"
 
 [packages]
 langchain = "*"
-requests = "*"
-black = "*"
-transformers = "*"
-langsmith = "*"
-openapi-schema-pydantic = "*"
 llama-cpp-python = "*"
+black = "*"
+chardet = "*"
+charset-normalizer = "*"
+langsmith = "*"
 
 [dev-packages]
-ipykernel = "*"
 
 [requires]
 python_version = "3.11"
