@@ -1,12 +1,13 @@
 from langchain import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.llms import LlamaCpp
-import infomation as info
+from langchain.document_loaders import TextLoader
+import information as info
 from select_model import select_model
 
 
 # Replace the path with the path to your local model if not using the default
-model_path = "./models"
+model_path = "./Models"
 
     
 if __name__ == "__main__":
@@ -23,7 +24,7 @@ if __name__ == "__main__":
 
     # This is entirely too slow, as is...
 
-    llm = LlamaCpp(model_path=select_model(model_path), verbose=False, max_tokens=1000, n_ctx=2000, n_threads=2)
+    llm = LlamaCpp(model_path=select_model(model_path), verbose=False, max_tokens=4000, n_ctx=2000, n_threads=2, temperature=0)
     # print("llm loaded", llm, end="\n")
 
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
