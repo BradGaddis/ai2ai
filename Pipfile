@@ -10,6 +10,10 @@ black = "*"
 chardet = "*"
 charset-normalizer = "*"
 langsmith = "*"
+pypdf = "*"
+openai = "*"
+tiktoken = "*"
+faiss-cpu = "*"
 
 [dev-packages]
 
